@@ -1,0 +1,25 @@
+---
+#
+# doc https://yamllint.readthedocs.io/en/stable/
+#
+# run in local (linux)
+# install => sudo python3 -m pip install yamllint
+# run => yamllint -s -c ./yamllint.yml ./src/Jackett.Common/Definitions/
+#
+extends: default
+
+rules:
+  comments:
+    min-spaces-from-content: 1
+  comments-indentation: disable
+  document-start:
+    level: error
+  empty-lines:
+    max: 1
+  empty-values: enable
+  indentation:
+    spaces: 2
+  line-length: disable
+  new-lines:
+    type: platform
+  truthy: disable
